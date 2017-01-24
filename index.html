@@ -115,23 +115,23 @@
 				<li>Free shipping with 4 days delivery</li>
 			</ul>
 			<form method="post" action="product_order.php" name="product-order" class="product-order">
-				<label for="color-selector-lable" class="color-selector-label" >Color</label>
-				<select class="product-order-selector" name="product-order-color">
+				<label for="color-selector-lable" class="color-selector-label">Color</label>
+				<select class="product-order-selector" name="product-order-color"  id="color-selector-lable">
 					<option value="" disabled selected>Select Color</option>
 					<option value="Black">Black</option>
 					<option value="White">White</option>
 					<option value="Green">Green</option>
 				</select>
-				<label for="size-selector" class="size-selector" >Size</label>
-				<select class="product-order-selector" name="product-order-color">
+				<label for="size-selector" class="size-selector" name="product-order-color">Size</label>
+				<select class="product-order-selector" name="product-order-color" id="size-selector">
 					<option value="" disabled selected>Select Size</option>
 					<option value="M">M</option>
 					<option value="L">L</option>
 					<option value="XL">XL</option>
 					<option value="XXL">XXL</option>
 				</select>
-				<label for="quantity-selector" class="quantity-selector" >QTY</label>
-				<input type="number" name="quantity" class="product-order-quantity" min="1" max="10" value="1">
+				<label for="quantity-selector" class="quantity-selector" name="quantity">QTY</label>
+				<input type="number" name="quantity" class="product-order-quantity" id="quantity-selector" min="1" max="10" value="1">
 				<button type="reset">Clear Selection</button>
 			</form>
 			<ul class="buttons-row">

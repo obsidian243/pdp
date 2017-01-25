@@ -95,8 +95,8 @@
 			</div>
 			<div class="product-price">&#36;499.00</div>
 			<ul class="product-additional-info">
-				<li class="product-additional-info-availability"><span class="product-additional-info-property">Availability :</span><span class="product-additional-info-value">In stock</span></li>
-				<li class="product-additional-info-availability">Product code :<span class="product-additional-info-value"> &#35;4657</li>
+				<li class="product-additional-info-availability"><span class="product-additional-info-property">Availability :</span><span class="product-additional-info-property">In stock</span></li>
+				<li class="product-additional-info-availability">Product code :<span class="product-additional-info-property"> &#35;4657</li>
 				<li class="product-additional-info-availability">Tags:
 					<a href="#" class="product-tag">Fashion</a>
 					<a href="#" class="product-tag">Hood</a>
@@ -116,8 +116,8 @@
 			</div>
 			<form method="post" action="product_order.php" name="product-order-form" class="product-order-form">
 				<div class="product-order-form-select-wrapper">
-					<label for="color-selector" class="color-selector">Color</label>
-					<select class="product-order-color-select" name="product-order-color-selector"  id="color-selector">
+					<label for="product-order-color-select" class="color-selector">Color</label>
+					<select class="product-order-form-select" name="product-order-color-select"  id="product-order-color-select">
 						<option value="" disabled selected>Select Color</option>
 						<option value="Black">Black</option>
 						<option value="White">White</option>
@@ -125,8 +125,8 @@
 					</select>
 				</div>
 				<div class="product-order-form-select-wrapper">
-					<label for="size-selector" class="size-selector" name="product-order-color">Size</label>
-					<select class="product-order-size-selector" name="product-order-size-selector" id="size-selector">
+					<label for="product-order-size-select" class="product-order-form-label" name="product-order-color">Size</label>
+					<select class="product-order-form-select" name="product-order-size-select" id="product-order-size-select">
 						<option value="" disabled selected>Select Size</option>
 						<option value="M">M</option>
 						<option value="L">L</option>
@@ -135,8 +135,8 @@
 					</select>
 				</div>
 				<div class="quantity-selector-wrapper">
-					<label for="quantity-selector" class="quantity-selector" name="quantity">QTY</label>
-					<input type="number" name="quantity" class="product-order-quantity" id="quantity-selector" min="1" max="10" value="1">
+					<label for="quantity-select" class="product-order-form-label" name="quantity">QTY</label>
+					<input type="number" name="quantity" class="product-order-quantity" id="quantity-select" min="1" max="10" value="1">
 				</div>
 				<button type="reset" class="reset-select-button">Clear Selection</button>
 			</form>

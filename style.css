@@ -1,0 +1,95 @@
+/* Styles reset */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+	margin: 0;
+}
+
+.header {
+	position: relative;
+	padding-top: 31px; /* TODO: fix this after finishing top-header */
+}
+
+.advertisement-block {
+	padding: 10px 0;
+	background: #d9e1e6;
+	font-size: 10px;
+	color: #868f93;
+	text-transform: uppercase;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.close-button {
+	font-size: 0;
+	width: 9px;
+	height: 9px;
+	background: url(images/close.png) no-repeat;
+	display: inline-block;
+	float: right;
+}
+
+.top-header {
+	padding: 28px 0 28px;
+}
+
+.wrapper {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 1000px;
+}
+
+.currency-selector-wrapper,
+.logo {
+	line-height: 46px;
+}
+
+.currency-selector-wrapper {
+	float: left;
+}
+
+.logo {
+	width: 133px;
+	margin: 0 auto;
+}
+
+.logo img {
+	vertical-align: middle;
+}
+
+
+.cart-wrapper {
+	float: right;
+	border: 2px solid #ded3aa;
+}
+
+.cart-wrapper a {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15px 40px;
+	display: block;
+	font-size: 11px;
+}
+
+.bottom-header {
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.navigation ul {
+	display: inline-block;
+	float: left;
+}
+
+.product-image-container {
+	width: 50%;
+}

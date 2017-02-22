@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="style.css" type="text/css" rel="stylesheet">
+<title>PDP</title>
+</head>
+<body>
+<div class="header">
+	<div class="advertisement-block">
+		<div class="wrapper">
+			<p>start selling your products or buy them from anywhere! <a href="#" class="close-button">close</a></p>
+		</div>
+	</div>
+	<div class="top-header">
+		<div class="wrapper">
+			<div class="currency-selector-wrapper">
+				<select class="currency-selector" name="currency-selector">
+					<option value="usd">usd</option>
+					<option value="uah">uah</option>
+					<option value="rur">rur</option>
+				</select>
+			</div>
+			<div class="cart-wrapper">
+				<a href="#">Cart (<span class="cart-quantity">3</span>)</a>
+			</div>
+			<div class="logo">
+				<a href="#">
+					<img src="images/logo.png" alt="logo"> 
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="bottom-header">
+		<div class="wrapper">
+			<ul class="utility-menu">
+				<li><a href="#" class="utility-menu-wishlist">wishlist</a></li>
+				<li><a href="#" class="utility-menu-search">search</a></li>
+			</ul>
+			<ul class="navigation">
+				<li><a href="#">Home</a></li>
+				<li class="has-submenu">
+					<a href="#">Men</a>
+					<ul class="sub-navigation">
+						<li><a href="#">Jackets</a></li>
+						<li><a href="#">Shoes</a></li>
+						<li><a href="#">Coats</a></li>
+						<li><a href="#">Hats</a></li>
+					</ul>
+				</li>
+				<li class="has-submenu">
+					<a href="#">woMen</a>
+					<ul class="sub-navigation">
+						<li><a href="#">Jackets</a></li>
+						<li><a href="#">Shoes</a></li>
+						<li><a href="#">Coats</a></li>
+						<li><a href="#">Hats</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Lockbook</a></li>
+				<li><a href="#">about</a></li>
+				<li><a href="#">blog</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="content">
+	<div class="wrapper">
+		<div class="product-image-container">
+			<div class="main-image-wrapper">
+				<img src="images/main-product-image.jpg" alt="main product image">
+			</div>
+			<ul class="thumbnails">
+				<li>
+					<a href="#" class="selected"><img src="images/product-thumbnail-1.jpg" alt="product thumbnail 1"></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/product-thumbnail-2.jpg" alt="product thumbnail 2"></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/product-thumbnail-3.jpg" alt="product thumbnail 3"></a>
+				</li>
+				<li>
+					<a href="#"><img src="images/product-thumbnail-4.jpg" alt="product thumbnail 4"></a>
+				</li>
+			</ul>
+		</div>
+		<div class="product-details-container">
+			<div class="product-redirect">Back to <a href="#" class="product-category-link">Woman<a/></div>
+			<h1 class="product-name">The Atelier Tailored Coat</h1>
+			<div class="rating-wrapper">
+			<!-- it's wrapper for rating stars, wich we will make with CSS -->
+			</div>
+			<div class="product-rating-review">
+				<div class="product-counter-review"><!-- it is a dynamic block to display reviews level --></div>
+				Review(s) <a href="#" class="product-review-button">add review</a>
+			</div>
+			<div class="product-price">&#36;499.00</div>
+			<ul class="product-additional-info">
+				<li class="product-additional-info-availability"><span class="product-additional-info-property">Availability : </span><span class="product-additional-info-property-value">In stock</span></li>
+				<li class="product-additional-info-availability">Product code :<span class="product-additional-info-property-value"> &#35;4657</li>
+				<li class="product-additional-info-availability">Tags:
+					<a href="#" class="product-tag">Fashion</a>
+					<a href="#" class="product-tag">Hood</a>
+					<a href="#" class="product-tag">Classic</a>
+				</li>
+			</ul>
+			<div class="product-description">
+				<p class="product-description">Sleek, polished, and boasting an impeccably modern fit, this blue, 2-but-
+				ton Lazio suit features a notch lapel, flap pockets, and accompanying flat
+				front trousers—all in pure wool by Vitale Barberis Canonico.</p>
+				<ul>
+					<li>Dark blue suit for a tone-on-tone look</li>
+					<li>Regular fit</li>
+					<li>100% Cotton</li>
+					<li>Free shipping with 4 days delivery</li>
+				</ul>
+			</div>
+			<form method="post" action="product_order.php" name="product-order-form" class="product-order-form">
+				<div class="product-order-form-select-wrapper">
+					<label for="product-order-color-select" class="color-selector">Color</label>
+					<select class="product-order-form-select" name="product-order-color-select"  id="product-order-color-select">
+						<option value="" disabled selected>Select Color</option>
+						<option value="Black">Black</option>
+						<option value="White">White</option>
+						<option value="Green">Green</option>
+					</select>
+				</div>
+				<div class="product-order-form-select-wrapper">
+					<label for="product-order-size-select" class="product-order-form-label" name="product-order-color">Size</label>
+					<select class="product-order-form-select" name="product-order-size-select" id="product-order-size-select">
+						<option value="" disabled selected>Select Size</option>
+						<option value="M">M</option>
+						<option value="L">L</option>
+						<option value="XL">XL</option>
+						<option value="XXL">XXL</option>
+					</select>
+				</div>
+				<div class="quantity-select-wrapper">
+					<label for="quantity-select" class="quantity-select-wrapper-label" name="quantity-select-wrapper-label">QTY</label>
+					<input type="number" name="product-order-quantity" class="product-order-quantity" id="quantity-select" min="1" max="10" value="1">
+				</div>
+				<button type="reset" class="product-order-form-reset-button">Clear Selection</button>
+			</form>
+			<ul class="buttons-row">
+				<li><a href="#" class="add-to-cart">add to cart</a></li>
+				<li><a href="#" class="add-to-wishlist">add to wishlist</a></li>
+			</ul>
+			<div class="social-block">
+				<div class="social-block-text">share this</div>
+				<ul class="social-block-button-links">
+					<li><a href="#"><img src="images/facebook.png"></a></li>
+					<li><a href="#"><img src="images/twitter.png"></a></li>
+					<li><a href="#"><img src="images/pinterest.png"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="footer">
+	<div class="wrapper">
+		<p class="copyright">Made with Love &amp; Coffee &copy; 2015 Design Lazy. All Rights Reserved</p>
+	</div>
+</div>
+<div class="call-advertising">
+	<p>Hollo, my friend, ho are you? ^</p>
+	<div class="call-advertising-number">
+		<p>Please call us 1-800-1234567.</p>
+		<p>All calls are free 
+			<div class="call-advertising-number-why">Why?
+				<div class="call-advertising-because">
+					<p>because 1-800 are free</p>
+				</div>
+			</div>
+		</p>
+	</div>
+</div>
+</body>
+</html>

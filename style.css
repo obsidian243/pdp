@@ -1,0 +1,416 @@
+/* Styles reset */
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+	margin: 0;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+
+.wrapper {
+	margin: 0 auto;
+	width: 1150px;
+}
+
+.wrapper::after {
+	content: "";
+	clear: both;
+	width: 100%;
+	display: table;
+}
+
+.header {
+	position: relative;
+	padding-top: 31px; /* TODO: fix this after finishing top-header */
+}
+
+.advertisement-block {
+	padding: 10px 0;
+	background: #d9e1e6;
+	font-size: 10px;
+	color: #868f93;
+	text-transform: uppercase;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.close-button {
+	font-size: 0;
+	width: 9px;
+	height: 9px;
+	background: url(images/close.png) no-repeat;
+	display: inline-block;
+	float: right;
+}
+
+.top-header {
+	padding: 28px 0;
+}
+
+.currency-selector-wrapper,
+.logo {
+	line-height: 46px;
+}
+
+.currency-selector-wrapper {
+	float: left;
+}
+
+.logo {
+	width: 133px;
+	margin: 0 auto;
+}
+
+.logo img {
+	vertical-align: middle;
+}
+
+
+.cart-wrapper {
+	float: right;
+	border: 2px solid #ded3aa;
+}
+
+.cart-wrapper a {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15px 40px;
+	display: block;
+	font-size: 11px;
+}
+
+.bottom-header {
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+	padding: 20px 0;
+	margin-bottom: 50px;
+}
+
+.navigation {
+	font-size: 0;
+	width: 80%;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+
+.navigation > li {
+	margin-left: 5%;
+	font-size: 11px;
+	display: inline-block;
+	line-height: 28px;
+}
+
+.navigation > li:first-child {
+	margin-left: 0;
+}
+
+.navigation > li a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.has-submenu {
+	position: relative;
+}
+
+.sub-navigation {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: -15px;
+	background: #ffffff;
+	padding: 15px;
+	line-height: 12px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.sub-navigation li {
+	text-align: left;
+}
+
+.sub-navigation li+li {
+	margin-top: 10px;
+}
+
+.navigation > li:hover .sub-navigation {
+	display: block;
+}
+
+.has-submenu > a {
+	display: inline-block;
+	background: url(images/arrow-down.png) right 11px no-repeat;
+	padding-right: 16px;
+}
+
+.utility-menu {
+	float: right;
+	font-size: 0;
+}
+
+.utility-menu li {
+	display: inline-block;
+}
+
+.utility-menu li+li {
+	border-left: 1px dotted #999999;
+}
+
+.utility-menu-wishlist,
+.utility-menu-search {
+	background-image: url(images/sprite-utility-menu.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	padding: 14px 22px;
+}
+
+.utility-menu-wishlist {
+	background-position: 14px center;
+}
+
+.utility-menu-search {
+	background-position: -34px center;
+}
+
+.call-advertising {
+	background: #d9e1e6;
+	width: 230px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	padding: 2px 2px;
+	text-align: center;
+}
+
+.call-advertising-number {
+	display: none;
+	background: #d9e1e6;
+}
+
+.call-advertising:hover .call-advertising-number {
+	display: block;
+}
+
+.call-advertising-number-why {
+	display: inline-block;
+}
+
+.call-advertising-because {
+	display: none;
+	font-size: 12px;
+	width: 130px;
+	background: #FFFF00;
+	position: absolute;
+	left: 230px;
+	bottom: 15px;
+}
+
+.call-advertising-number-why:hover .call-advertising-because {
+	display: block;
+}
+
+.product-image-container {
+	width: 60%;
+	float: left;
+}
+
+.product-details-container {
+	width: 40%;
+	float: right;
+}
+
+.product-redirect {
+	padding-top: 10px;
+	font-size: 14px;
+	margin-bottom: 40px;
+}
+
+.product-category-link {
+	color: #68899a;
+	text-decoration: none;
+}
+
+.product-price {
+	font-size: 24px;
+	color: #68899a;
+	margin-bottom: 25px;
+}
+
+.product-name {
+	font-size: 24px;
+	margin-top: 0;
+	margin-bottom: 18px;
+}
+
+.product-rating-review {   /* todo: need style for this block, i get back to this point later */
+	padding-bottom: 20px;
+}
+
+.product-additional-info-availability {
+	font-size: 14px;
+}
+
+.product-additional-info-property-value {
+	color: #68899a;
+}
+
+.product-tag {
+	color: #68899a;   /* zzhanna4796 */
+	text-decoration: none;
+}
+
+.product-additional-info-availability {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.product-description {
+	margin: 27px 0 40px;
+	font-size: 14px;
+	color: #555555;
+}
+
+.product-description li {
+	list-style-type: disc;
+	list-style-position: inside;
+	color: #555555;
+}
+
+.product-order-form {
+
+}
+
+.color-selector {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.product-order-form-label {
+	font-size: 14px;
+	font-weight: bold;	
+}
+
+.quantity-select-wrapper-label {
+	font-size: 14px;
+	font-weight: bold;	
+}
+
+.product-order-form-select {
+	width: 165px;
+	height: 35px;
+	color: #555555;
+	padding-left: 15px;
+}
+
+.product-order-quantity {
+	width: 70px;
+	height: 35px;
+	color: #555555;
+	padding-left: 15px;
+	margin-bottom: 40px;
+}
+
+.main-image-wrapper {
+	margin-bottom: 20px;
+}
+
+.product-order-form-reset-button {
+	font-size: 14px;
+	font-weight: bold;
+	border: 0;
+	background-color: #ffffff;
+	text-decoration: underline;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	outline: 0;
+}
+
+.thumbnails {
+	width: 100%;
+	display: block;
+	margin-bottom: 100px;
+}
+
+.thumbnails > li {
+	display: inline-block;
+}
+
+.thumbnails li {
+	padding-right: 19px;
+}
+
+.buttons-row {
+	float: right;
+	display: block;
+	width: 30%;
+}
+
+.buttons-row  > li {
+	display: inline-block;
+}
+
+.add-to-cart {
+	font-size: 13px;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #080808;
+	padding: 5px 60px;
+	text-align: center;
+}
+
+.add-to-wishlist {
+	font-size: 13px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 5px 60px;
+	border: 1px solid #e1e1e1;
+	color: #555555;
+	text-align: center;
+}
+
+.buttons-row:after {
+	content: "";	
+	display: block;
+	height: 0;
+	clear: both;
+}
+
+.social-block {
+	height: 50px;
+	border-top: 1px solid #e1e1e1;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.social-block-button-links {
+	
+}
+
+.footer {
+	border-top: 1px solid #e1e1e1;
+	height: 70px;
+}
+
+.copyright {
+	width: 50%;
+	margin: 25px auto;
+	text-align: center;
+	font-size: 13px;
+	color: #555555;
+}
